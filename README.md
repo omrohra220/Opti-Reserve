@@ -85,3 +85,101 @@ The system provides centralized resource management, reservation handling, user 
 ---
 
 # 🏗 System Architecture
+
+
+React Frontend
+|
+|
+REST API
+|
+|
+ASP.NET Core Web API
+|
+|
+Entity Framework Core
+|
+|
+SQLite Database
+
+
+---
+
+# 🗄 Database Design
+
+Opti-Reserve uses SQLite as the database with Entity Framework Core for ORM.
+
+Main entities:
+
+## Users
+
+Stores system users and authentication information.
+
+Fields:
+
+- UserId
+- Name
+- Email
+- PasswordHash
+- Role
+
+
+## Resources
+
+Stores available university facilities.
+
+Fields:
+
+- ResourceId
+- ResourceName
+- Category
+- Location
+- AvailabilityStatus
+
+
+## Reservations
+
+Stores booking information.
+
+Fields:
+
+- ReservationId
+- UserId
+- ResourceId
+- StartTime
+- EndTime
+- Status
+
+
+## Maintenance Reports
+
+Stores resource maintenance issues.
+
+Fields:
+
+- ReportId
+- ResourceId
+- Description
+- Status
+- CreatedDate
+
+
+---
+
+# ⚙️ Installation Guide
+
+## Prerequisites
+
+Install:
+
+- .NET 8 SDK
+- Node.js
+- Git
+
+---
+
+# Backend Setup
+
+Clone repository:
+
+```bash
+git clone https://github.com/yourusername/Opti-Reserve.git
