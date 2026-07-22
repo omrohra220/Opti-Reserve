@@ -183,3 +183,40 @@ Clone repository:
 
 ```bash
 git clone https://github.com/yourusername/Opti-Reserve.git
+
+Navigate:
+
+cd Backend
+
+Install dependencies:
+
+dotnet restore
+
+Apply database migration:
+
+dotnet ef database update
+
+Run backend:
+
+dotnet run
+
+Backend runs on:
+
+http://localhost:5121
+Frontend Setup
+
+Navigate:
+
+cd Frontend
+
+Install packages:
+
+npm install
+
+Run application:
+
+npm run dev
+
+Frontend runs on:
+
+http://localhost:5173
