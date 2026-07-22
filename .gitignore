@@ -324,6 +324,27 @@ node_modules/
 # Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
 *.vbw
 
+# React
+node_modules/
+dist/
+
+# ASP.NET Core
+bin/
+obj/
+
+# Visual Studio
+.vs/
+
+# Database
+*.db
+*.sqlite
+
+# Environment
+.env
+
+# Logs
+*.log
+git status
 # Visual Studio 6 workspace and project file (working project files containing files to include in project)
 *.dsw
 *.dsp
